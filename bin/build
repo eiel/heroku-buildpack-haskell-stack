@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir> <env-dir>
+
+# fail fast
+set -e
+
+# parse args
+APP_BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+
+# create the cache dir if it doesn't exist
+mkdir -p $CACHE_DIR
+

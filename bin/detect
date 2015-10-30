@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# bin/use <build-dir>
+
+if [ -f $1/stack.yml ]; then
+  echo "Haskell Stack"
+  exit 0
+fi
+
+exit 1
